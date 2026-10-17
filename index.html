@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FleetTrack - Rastreo de Camiones</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">
+            <h2>🚚 Saza trucks </h2>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="pro.html">Inicio</a></li>
+                <li><a href="">Unidades en Ruta</a></li>
+                <li><a href="">Soporte y Monitoreo</a></li>
+                <li><a href= "0" target="_blank">Google Maps</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        
+        <section class="hero-card">
+            <h1>Sistema Inteligente de Rastreo de Camiones</h1>
+            <p class="location">Zumpango / Cobertura Nacional</p>
+            <p>Control satelital en tiempo real para optimizar las rutas y seguridad de tu flota de transporte.</p>
+        </section>
+
+        <section class="services-section">
+            <h2>Nuestros Servicios de Monitoreo</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <span class="icon">🛰️</span>
+                    <h3>GPS Satelital</h3>
+                    <p>Ubicación exacta de las unidades 24/7 en cualquier carretera del país.</p>
+                </div>
+                <div class="service-card">
+                    <span class="icon">📊</span>
+                    <h3>Telemetría</h3>
+                    <p>Monitoreo del rendimiento del motor y diagnóstico de fallas a distancia.</p>
+                </div>
+                <div class="service-card">
+                    <span class="icon">⛽</span>
+                    <h3>Combustible</h3>
+                    <p>Control estricto de cargas, descargas y rendimiento por kilómetro.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <form action="procesar.php" method="POST" class="formulario">
+                <fieldset class="formulario-fieldset">
+                    <legend class="formulario-legend">Consulta de Estatus de Unidad</legend>
+
+                    <div class="campo">
+                        <label class="campo-label">Número Económico del Camión:</label>
+                        <input type="text" class="input-text" name="economico" required placeholder="Ej. ECO-404">
+                    </div>
+
+                    <div class="campo">
+                        <label class="campo-label">Correo del Administrador:</label>
+                        <input type="email" class="input-text" name="email" required placeholder="admin@flota.com">
+                    </div>
+
+                    <div class="campo">
+                        <label class="campo-label">Detalles o Incidencia:</label>
+                        <textarea class="campo-textarea" name="reporte" required placeholder="Escriba el motivo de la consulta o reporte..."></textarea>
+                    </div>
+
+                    <div class="botones">
+                        <button type="submit" class="btn-primary">Consultar Unidad</button>
+                        <button type="reset" class="btn-secondary">Limpiar Campos</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Saza trucks - Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
